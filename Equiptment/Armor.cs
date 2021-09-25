@@ -16,16 +16,16 @@ namespace FightClub.Equiptment
                 return armorPoints;
             }
 
-           
+
         }
         public Armor(Faction faction)
         {
             switch (faction)
             {
-                case Faction.Hero:
+                case Faction.Faction1:
                     armorPoints = HERO_AP;
                     break;
-                case Faction.Enemy:
+                case Faction.Faction2:
                     armorPoints = ENEMY_AP;
                     break;
                 default:

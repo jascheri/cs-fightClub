@@ -3,7 +3,7 @@ using FightClub.Equiptment;
 
 namespace FightClub
 {
-    class Fighter
+    class Character
     {
         private const int HERO_STARTING_HEALTH = 100;
         private const int ENEMY_STARTING_HEALTH = 100;
@@ -25,7 +25,7 @@ namespace FightClub
         private Weapon weapon;
         private Armor armor;
 
-        public Fighter(string name, Faction faction)
+        public Character(string name, Faction faction)
         {
             this.name = name;
             this.FACTION = faction;
@@ -33,13 +33,13 @@ namespace FightClub
 
             switch (faction)
             {
-                case Faction.Hero:
+                case Faction.Faction1:
                     weapon = new Weapon(faction);
                     armor = new Armor(faction);
                     health = HERO_STARTING_HEALTH;
                     break;
 
-                case Faction.Enemy:
+                case Faction.Faction2:
                     weapon = new Weapon(faction);
                     armor = new Armor(faction);
                     health = ENEMY_STARTING_HEALTH;
@@ -49,7 +49,20 @@ namespace FightClub
                     break;
             }
         }
+
+        public void Attack(Character target)
+        {
+            int damage = weapon.Damage / target.armor.ArmorPoints;
+
+            target.health -= damage;
+
+            if (target.health <= 0)
+            {
+                target.isAlive = false;
+                System.Console.WriteLine($"{target.name} is dead! {name} is the victor");
+            }
+        }
     }
 
-  
+
 }

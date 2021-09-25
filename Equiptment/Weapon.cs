@@ -20,10 +20,10 @@ namespace FightClub.Equiptment
         {
             switch (faction)
             {
-                case Faction.Hero:
+                case Faction.Faction1:
                     damage = HERO_DAMAGE;
                     break;
-                case Faction.Enemy:
+                case Faction.Faction2:
                     damage = ENEMY_DAMAGE;
                     break;
                 default:
