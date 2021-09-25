@@ -1,5 +1,7 @@
 ﻿using FightClub.Enums;
 using FightClub.Equiptment;
+using System;
+using System.Threading;
 
 namespace FightClub
 {
@@ -7,6 +9,8 @@ namespace FightClub
     {
         private const int HERO_STARTING_HEALTH = 100;
         private const int ENEMY_STARTING_HEALTH = 100;
+
+        static Random rng = new Random();
 
         private readonly Faction FACTION;
 
@@ -52,15 +56,25 @@ namespace FightClub
 
         public void Attack(Character target)
         {
-            int damage = weapon.Damage / target.armor.ArmorPoints;
-
+            int damage = weapon.Damage / rng.Next(1,10) - target.armor.ArmorPoints / rng.Next(1, 10);
+            if (damage < 0) damage = 0;
             target.health -= damage;
+            attackResult(target, damage);
+        }
 
+        private void attackResult(Character target, int damage)
+        {
             if (target.health <= 0)
             {
                 target.isAlive = false;
-                System.Console.WriteLine($"{target.name} is dead! {name} is the victor");
+                Tools.ColorfulWriteLine($"{target.name} is dead!", ConsoleColor.Red);
+                Tools.ColorfulWriteLine($"{name} is the victor", ConsoleColor.Green);
             }
+            else
+            {
+                Console.WriteLine($"{name} hit {target.name} for {damage} damage. {target.name} has {target.health} remaining.");
+            }
+            Thread.Sleep(200);
         }
     }
 
