@@ -2,8 +2,8 @@
 {
     enum Faction
     {
-        Faction1,
-        Faction2
+        Hero,
+        Faction1
 
     }
 }

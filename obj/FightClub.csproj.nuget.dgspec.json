@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jmasc\\source\\repos\\cs-fightClub\\FightClub.csproj": {}
+    "C:\\Users\\jmasc\\source\\repos\\jascheri\\cs-fightClub\\FightClub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jmasc\\source\\repos\\cs-fightClub\\FightClub.csproj": {
+    "C:\\Users\\jmasc\\source\\repos\\jascheri\\cs-fightClub\\FightClub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jmasc\\source\\repos\\cs-fightClub\\FightClub.csproj",
+        "projectUniqueName": "C:\\Users\\jmasc\\source\\repos\\jascheri\\cs-fightClub\\FightClub.csproj",
         "projectName": "FightClub",
-        "projectPath": "C:\\Users\\jmasc\\source\\repos\\cs-fightClub\\FightClub.csproj",
+        "projectPath": "C:\\Users\\jmasc\\source\\repos\\jascheri\\cs-fightClub\\FightClub.csproj",
         "packagesPath": "C:\\Users\\jmasc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jmasc\\source\\repos\\cs-fightClub\\obj\\",
+        "outputPath": "C:\\Users\\jmasc\\source\\repos\\jascheri\\cs-fightClub\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jmasc\\AppData\\Roaming\\NuGet\\NuGet.Config",

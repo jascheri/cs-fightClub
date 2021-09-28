@@ -1,36 +1,34 @@
 ﻿using FightClub.Enums;
+using System;
 
 namespace FightClub.Equiptment
 {
-    class Armor
+    class Armor : Equiptment
     {
-        private const int HERO_AP = 5;
-        private const int ENEMY_AP = 5;
 
-        private int armorPoints;
+        public int ArmorPoints { get; set; }
 
-        public int ArmorPoints
+        static Random rng = new Random();
+        /// <summary>
+        /// Creates an armor for the character
+        /// </summary>
+        /// <param name="level">
+        /// Armor level to be set
+        /// </param>
+        public Armor(int level)
         {
-            get
-            {
-                return armorPoints;
-            }
-
-
+            MyLevel = level;
+            SetArmor(level);
         }
-        public Armor(Faction faction)
+        /// <summary>
+        /// Calculates min and max armor points from a range based on the provided level.
+        /// </summary>
+        /// <param name="level">
+        /// Armor's level
+        /// </param>
+        private void SetArmor(int level)
         {
-            switch (faction)
-            {
-                case Faction.Faction1:
-                    armorPoints = HERO_AP;
-                    break;
-                case Faction.Faction2:
-                    armorPoints = ENEMY_AP;
-                    break;
-                default:
-                    break;
-            }
+            ArmorPoints = rng.Next(0 + level, 5 + level);
         }
     }
 }

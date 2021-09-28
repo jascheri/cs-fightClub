@@ -1,5 +1,6 @@
 ﻿using System;
 using FightClub.Enums;
+using FightClub.Equiptment;
 
 namespace FightClub
 {
@@ -9,8 +10,9 @@ namespace FightClub
 
         static void Main()
         {
-            Character hero = new Character("Dan", Faction.Faction1);
-            Character enemy = new Character("Fred", Faction.Faction2);
+            
+            Character hero = new Character("Dan", Faction.Hero, new Weapon(1), new Armor(3));
+            Character enemy = new Character("Fred", Faction.Faction1, new Weapon(5), new Armor(5));
 
             while (hero.IsAlive && enemy.IsAlive)
             {

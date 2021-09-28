@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace FightClub
 {
@@ -7,8 +8,18 @@ namespace FightClub
         public static void ColorfulWriteLine(string text, ConsoleColor color)
         {
             Console.ForegroundColor = color;
-            Console.WriteLine(text);
+            Write(text);
             Console.ResetColor();
+        }
+
+        public static void Write (string text)
+        {
+            foreach (char c in text)
+            {
+                Console.Write(c);
+               // Thread.Sleep(5);
+            }
+            Console.Write("\n");
         }
     }
 }

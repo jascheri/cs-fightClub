@@ -24,3 +24,16 @@ C:\Users\jmasc\source\repos\cs-fightClub\obj\Debug\netcoreapp3.1\FightClub.cspro
 C:\Users\jmasc\source\repos\cs-fightClub\obj\Debug\netcoreapp3.1\FightClub.dll
 C:\Users\jmasc\source\repos\cs-fightClub\obj\Debug\netcoreapp3.1\FightClub.pdb
 C:\Users\jmasc\source\repos\cs-fightClub\obj\Debug\netcoreapp3.1\FightClub.genruntimeconfig.cache
+C:\Users\jmasc\source\repos\jascheri\cs-fightClub\bin\Debug\netcoreapp3.1\FightClub.exe
+C:\Users\jmasc\source\repos\jascheri\cs-fightClub\bin\Debug\netcoreapp3.1\FightClub.deps.json
+C:\Users\jmasc\source\repos\jascheri\cs-fightClub\bin\Debug\netcoreapp3.1\FightClub.runtimeconfig.json
+C:\Users\jmasc\source\repos\jascheri\cs-fightClub\bin\Debug\netcoreapp3.1\FightClub.runtimeconfig.dev.json
+C:\Users\jmasc\source\repos\jascheri\cs-fightClub\bin\Debug\netcoreapp3.1\FightClub.dll
+C:\Users\jmasc\source\repos\jascheri\cs-fightClub\bin\Debug\netcoreapp3.1\FightClub.pdb
+C:\Users\jmasc\source\repos\jascheri\cs-fightClub\obj\Debug\netcoreapp3.1\FightClub.csproj.AssemblyReference.cache
+C:\Users\jmasc\source\repos\jascheri\cs-fightClub\obj\Debug\netcoreapp3.1\FightClub.AssemblyInfoInputs.cache
+C:\Users\jmasc\source\repos\jascheri\cs-fightClub\obj\Debug\netcoreapp3.1\FightClub.AssemblyInfo.cs
+C:\Users\jmasc\source\repos\jascheri\cs-fightClub\obj\Debug\netcoreapp3.1\FightClub.csproj.CoreCompileInputs.cache
+C:\Users\jmasc\source\repos\jascheri\cs-fightClub\obj\Debug\netcoreapp3.1\FightClub.dll
+C:\Users\jmasc\source\repos\jascheri\cs-fightClub\obj\Debug\netcoreapp3.1\FightClub.pdb
+C:\Users\jmasc\source\repos\jascheri\cs-fightClub\obj\Debug\netcoreapp3.1\FightClub.genruntimeconfig.cache
