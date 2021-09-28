@@ -10,7 +10,7 @@ namespace FightClub
 
         static void Main()
         {
-            
+            // Test change for the branch
             Character hero = new Character("Dan", Faction.Hero, new Weapon(1), new Armor(3));
             Character enemy = new Character("Fred", Faction.Faction1, new Weapon(5), new Armor(5));
 
